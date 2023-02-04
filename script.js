@@ -158,8 +158,8 @@ function fetchCoordinates() {
             alert("Location not found")
         } else {
             
-            appendSearchHistory(search)
-            fetchWeather(response[0])
+        appendSearchHistory(search)
+        fetchWeather(response[0])
             
         
         }
@@ -176,7 +176,6 @@ function initializeHistory(){
     renderSearchHistory()
 }
 
-
 function submitSearchForm(event){
     
     
@@ -188,7 +187,6 @@ function submitSearchForm(event){
     fetchCoordinates(search);
     searchInput.val("");
 }
-
 function SearchHistoryclick(event) {
    if (!$(event.target).hasClass("btn-history")) {
     return
@@ -205,10 +203,4 @@ searchForm.on("submit", submitSearchForm);
 searchHistoryContainer.on("click",SearchHistoryclick)
 
 
-
-
-
-
-
-
-
+}
