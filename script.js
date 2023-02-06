@@ -60,7 +60,7 @@ function fetchCoordinates(search) {
             appendToSearchHistory(response[0].name);
         })
         .catch(function(e) {
-            console.error(e);
+            
         });
 }
 
